@@ -31,8 +31,8 @@
   }}();
 
   function login(email) {
-     alert(email);
-    analytics.identity(email,{
+     
+    analytics.identify(email,{
         email:email,
         page_url: "login.html",
         reward_tier:"silver"
