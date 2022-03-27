@@ -23,6 +23,23 @@
     <![endif]-->
  
     <script src='js/device.min.js'></script> 
+
+    <script>
+        function AddToCart(model,amount)
+        {
+            alert("Item added to cart.");
+             analytics.trace("Add to Cart",{
+    type:"shoes",
+        page_url: 'new-release.html',
+        value: amount,
+        shoe_model: model
+
+    
+    });
+            
+       
+        }
+    </script>
 </head>
 
 <body>
@@ -41,9 +58,9 @@
                     </h1>
                 </div>
 
-                <nav class="nav">
+                 <nav class="nav">
                     <ul class="sf-menu">
-                        <li>
+                         <li>
                             <a href="index.html">Home</a>
                         </li>
                         
@@ -54,34 +71,18 @@
                             <a href="men.html">Men</a>
                         </li>
                         <li>
-                            <a href="men.html">Women</a>
+                            <a href="women.html">Women</a>
                         </li>
+                        
                          <li>
-                            <a href="men.html">Kids</a>
-                            <ul>
-                                <li>
-                                    <a href="index-2.html">Boys Shoes</a>
-                                </li>
-                                <li>
-                                    <a href="#">Girls Shoes</a>
-                                    
-                                </li>
-                                <li>
-                                    <a href="#">Boys Clothing</a>
-                                </li>
-                                <li>
-                                    <a href="#">Girls Clothing</a>
-                                </li>
-                            </ul>
+                            <a href="checkout.html">Checkout</a>
                         </li>
                         <li>
                             <a href="contact.html">Contacts</a>
                         </li>
-                        </ul>
-                        
-                        
-                        
                     </ul>
+                              
+                    
                 </nav>
             </div>
         </div>
@@ -102,7 +103,7 @@
                         Men's Shoes<br>
                         1 color<br> <br>
 
-                        $185
+                        $185   <button onclick="AddToCart('Nike Air Max 97 SE','185')">Add to Cart</button>
 
                     </div>
                     <div class="grid_6">
@@ -112,7 +113,7 @@
                         Men's Shoes<br>
                         1 color<br> <br>
 
-                        $100
+                        $100   <button onclick="AddToCart('Nike Air Max Motif','100')">Add to Cart</button>
                     </div>
                     <div class="grid_6">
                         <div class="img"><div class="lazy-img" style="padding-bottom: 64.91228070175439%;"><img data-src="images/shoe-2.jpg" alt=""></div></div>
@@ -121,7 +122,7 @@
                         Men's Shoes<br>
                         1 color<br> <br>
 
-                        $95
+                        $95  <button onclick="AddToCart('Nike Air Max 90','95')">Add to Cart</button>
                     </div>
                     <div class="grid_6">
                          <div class="img"><div class="lazy-img" style="padding-bottom: 64.91228070175439%;"><img data-src="images/shoe-3.jpg" alt=""></div></div>
@@ -130,61 +131,12 @@
                         Kids Shoes<br>
                         1 color<br> <br>
 
-                        $120
+                        $120  <button onclick="AddToCart('Nike Air Max Motif','120')">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="parallax parallax4" data-parallax-speed="-0.4">
-            <div class="container">
-                <h2><em>Special </em>Offers</h2>
-                <p class="indents-3">Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequat. Phasellus era nisl auctor venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.<br><br>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convavel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor venenatis nullatibulum volutpat turpis ut massa commodoquis aliquam massa facilisis.Integer convavel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor venenatis nulla.</p>  
-            </div>
-        </section>
-        <section class="well well__offset-4">
-            <div class="container">
-                <h2><em>Banquets </em>and Parties</h2>
-                <div class="row">
-                    <div class="grid_4">
-                        <div class="img"><div class="lazy-img" style="padding-bottom: 55.94594594594595%;"><img data-src="images/page-3_img02.jpg" alt=""></div></div>
-                        <h3>Anteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. </h3>
-                        <p>Vestibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequat. Phasellus</p>
-                    </div>
-                    <div class="grid_4">
-                        <div class="img"><div class="lazy-img" style="padding-bottom: 55.94594594594595%;"><img data-src="images/page-3_img03.jpg" alt=""></div></div>
-                        <h3>Genteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. </h3>
-                        <p>Meestibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequat. Phasellus</p>
-                    </div>
-                    <div class="grid_4">
-                        <div class="img"><div class="lazy-img" style="padding-bottom: 55.94594594594595%;"><img data-src="images/page-3_img04.jpg" alt=""></div></div>
-                        <h3>Ternteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nul. </h3>
-                        <p>Testibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequat. Phasellus</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="grid_4">
-                        <div class="img"><div class="lazy-img" style="padding-bottom: 55.94594594594595%;"><img data-src="images/page-3_img05.jpg" alt=""></div></div>
-                        <h3>Onteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. </h3>
-                        <p>Vestibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequat. Phasellus</p>
-                    </div>
-                    <div class="grid_4">
-                        <div class="img"><div class="lazy-img" style="padding-bottom: 55.94594594594595%;"><img data-src="images/page-3_img06.jpg" alt=""></div></div>
-                        <h3>Genteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. </h3>
-                        <p>Meestibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequat. Phasellus</p>
-                    </div>
-                    <div class="grid_4">
-                        <div class="img"><div class="lazy-img" style="padding-bottom: 55.94594594594595%;"><img data-src="images/page-3_img07.jpg" alt=""></div></div>
-                        <h3>Ternteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nul. </h3>
-                        <p>Testibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequat. Phasellus</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="parallax parallax5" data-parallax-speed="-0.4">
-            <div class="container">
-                <h2><em>Special menu </em>for Special Event</h2>
-            </div>
-        </section>
+       
     </main>
 
     <!--========================================================

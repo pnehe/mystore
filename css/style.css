@@ -6,7 +6,7 @@
                       Main Styles
 =========================================================*/
 body {
-  background: #a95858;
+  background: darkgray;
   color: #333;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -422,7 +422,7 @@ a[href^="tel:"] {
 }
 /*==================  Stuck menu  ======================*/
 .isStuck {
-  background: #994f4f;
+  background: darkgray;
   z-index: 999;
   border-bottom: 1px solid #333333;
 }

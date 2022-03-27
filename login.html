@@ -1,12 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Men</title>
+    <title>login</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-form.css">
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -28,6 +29,18 @@
   analytics.load("mfx2aACM89MlXWv8sTEE65sJHu11Hx36");
   analytics.page();
   }}();
+
+  function login(email) {
+     alert(email);
+    analytics.identity(email,{
+        email:email,
+        page_url: 'login.html',
+        reward_tier:"silver"
+    }
+    );
+    
+  location="index.html"
+}
 </script>
 </head>
 
@@ -63,9 +76,6 @@
                             <a href="women.html">Women</a>
                         </li>
                         
-                         <li>
-                            <a href="checkout.html">Checkout</a>
-                        </li>
                         <li>
                             <a href="contact.html">Contacts</a>
                         </li>
@@ -81,39 +91,43 @@
                               CONTENT
     =========================================================-->
     <main>
-        <section class="well well__offset-3">
+        <section class="well well__offset-3">ß
             <div class="container">
-                <h2><em>Sale</em> !!</h2>
-                <div class="row box-2">
-                    <div class="grid_4">
-                        <div class="img"><div class="lazy-img" style="padding-bottom: 76.21621621621622%;"><img data-src="images/shoe-1.jpg" alt=""></div></div>
-                        <h3>Anteger convallis orci vel mi nelaoreet, at ornare lorem consequat. </h3>
-                        <p>Vestibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequat.</p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                    <div class="grid_4">
-                        <div class="img"><div class="lazy-img" style="padding-bottom: 76.21621621621622%;"><img data-src="images/shoe-2.jpg" alt=""></div></div>
-                        <h3>Genteger convallis orci vel mi nelaoreet, at ornare lorem consequat.</h3>
-                        <p>Meestibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequatre. </p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                    <div class="grid_4">
-                        <div class="img"><div class="lazy-img" style="padding-bottom: 76.21621621621622%;"><img data-src="images/shoe-3.jpg" alt=""></div></div>
-                        <h3>Ternteger convallis orci vel mi nelaoreet, at ornare lorem consequat. </h3>
-                        <p>Testibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequ.</p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </div>
-                <div class="row box-2">
-                    <div class="grid_4">
-                        <div class="img"><div class="lazy-img" style="padding-bottom: 76.21621621621622%;"><img data-src="images/shoe-4.jpg" alt=""></div></div>
-                        <h3>Onteger convallis orci vel mi nelaoreet, at ornare lorem consequate. </h3>
-                        <p>Testibulum volutpatturpis ut massa commodo, quis aliquam massa facilisis.Integer convavel miberto merlonelaoreet, at ornare lorem consequa.</p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                    
-                </div>
                 
+                <div class="row box-3">
+                    <div class="grid_5">                        
+                        <form id="contact-form" class='contact-form'>
+                            <div class="contact-form-loader"></div>
+                            <fieldset>
+                                <label class="name">
+                                   Login: email
+                                    <input type="text" id="email" name="email" placeholder="" value=""
+                                           data-constraints="@Required @Email"/>                
+                                    <span class="empty-message">*This field is required.</span>
+                                    <span class="error-message">*This is not a valid email.</span>
+                                </label>
+                
+                                <label class="email">
+                                    Password:
+                                    <input type="password" name="password" placeholder="" value=""
+                                           data-constraints="@Required"/>                
+                                    <span class="empty-message">*This field is required.</span>
+                                    <span class="error-message">*This is not a valid password.</span>
+                                </label>
+                
+                                
+                
+                                <div class="btn-wr">
+                                    <a class="" href="#" data-type="reset">Clear</a>
+                                    <a class="" onclick="login(document.getElementById('email').value)">Submit</a>
+                                </div> 
+                               
+                            </fieldset>
+                           
+                        </form>
+                    </div>    
+                   
+                </div>
             </div>
         </section>
     </main>
