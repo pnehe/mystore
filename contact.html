@@ -31,16 +31,13 @@
   }}();
   function login(email) {
      alert(email);
-    analytics.trace('support request',{
+    analytics.track('support request',{
         email:email,
         page_url: 'contact.html'
     }
     );
     
-  function checkout() {
-     alert("checkout");
-   
-}
+  
 </script>
 </head>
 
